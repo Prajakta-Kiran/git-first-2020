@@ -1,21 +1,18 @@
 package com.example.demo;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Anagrams {
 	public static void main(String args[]) {
-		List<String> testLi = new CopyOnWriteArrayList<>();
-		testLi.add("code");
-		
-		testLi.add("edocee");
+		List<String> testLi = new ArrayList<>();
+		testLi.add("code");	
+		testLi.add("doec");
 		testLi.add("formater");
-		testLi.add("formater");
+		testLi.add("format");
 		testLi.add("doce");
-		
-		List<String> filteredList = new CopyOnWriteArrayList<>();
-		
 		int n1=0;
 		int n2=0;
 
@@ -33,7 +30,6 @@ public class Anagrams {
 	}
 
 	private static boolean areAnagram(char[] cs1, char[] cs2, int n1, int n2) {
-		// TODO Auto-generated method stub
 		if(cs1.length != cs2.length) {
 			return false;
 		}
