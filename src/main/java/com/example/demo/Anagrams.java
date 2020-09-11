@@ -9,10 +9,10 @@ public class Anagrams {
 	public static void main(String args[]) {
 		List<String> testLi = new ArrayList<>();
 		testLi.add("code");	
-		testLi.add("doec");
+		testLi.add("frr");
 		testLi.add("formater");
 		testLi.add("format");
-		testLi.add("doce");
+		testLi.add("ormaterf");
 		int n1=0;
 		int n2=0;
 
